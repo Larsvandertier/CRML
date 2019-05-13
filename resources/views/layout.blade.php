@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <title>My crm</title>
 </head>
 <body>
-<h1> hallo </h1>
+    @yield('content')
 </body>
 </html>

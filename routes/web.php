@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/adressen', 'AdressenController@index');
+Route::post('/adressen', 'AdressenController@store');
+Route::get('/adressen/create', 'AdressenController@create');

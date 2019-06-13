@@ -1,3 +1,32 @@
-*{
-    background-color: #1b4b72;
+/*index, show*/
+h2>a {
+    float: right;
+    margin-top: 5px;
 }
+
+/*Meer informatie -- home*/
+td>a{
+    color: black;
+    text-decoration: none;
+}
+td>a:hover{
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+
+th>a{
+    text-decoration: underline;
+    color: white;
+}
+th>a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #b0d4f1;
+    border-radius: 5px;
+}
+
+
+
+
+

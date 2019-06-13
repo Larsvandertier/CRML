@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-</head>
-<body>
-<h1> hallo </h1>
-</body>
-</html>
+@extends('layout')
+@section('content')
+<h1 class="display-2">Hallo</h1>
+@endsection

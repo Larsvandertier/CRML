@@ -22,3 +22,6 @@ Route::get('/adressen/{adres}/edit', 'AdressenController@edit');
 Route::patch('/adressen/{adres}', 'AdressenController@update');
 Route::delete('/adressen/{adres}', 'AdressenController@destroy');
 Route::get('/adressen/{adres}', 'AdressenController@show');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');

@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    <div class="container">
+    <div class="container" style="margin-top: 2em">
         <h2>Bewerk: {{$adres->voornaam}}
             <a role="button" class="btn btn-outline-info" href="/adressen/{{$adres->id}}"><</a>
         </h2>

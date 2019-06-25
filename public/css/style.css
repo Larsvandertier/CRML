@@ -11,7 +11,7 @@ td>a{
 }
 td>a:hover{
     text-decoration: underline;
-    color: dodgerblue;
+    color: #549dac;
 }
 
 
@@ -19,13 +19,28 @@ th>a{
     text-decoration: underline;
     color: white;
 }
-th>a:hover{
+th>a:hover {
     text-decoration: underline;
     color: white;
-    background-color: #b0d4f1;
+    background-color: #549dac;
     border-radius: 5px;
 }
 
+.dropdown-item:hover{
+    color: #549dac;
+}
+
+
+.Kleur1{
+    text-decoration: none;
+
+}
+
+.Kleur1:hover{
+    background-color: lightgray;
+    text-decoration: none;
+    color: white;
+}
 
 
 

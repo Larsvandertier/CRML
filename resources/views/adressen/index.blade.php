@@ -1,26 +1,21 @@
 @extends('layout')
 @section('content')
-    <div class="container">
-        <h2>Adressen<a role="button" class="btn btn-outline-info" href="/adressen/create">Maak er één</a></h2>
-            <table class="table table-hover">
-                <thead>
-                <tr class="bg-info">
-                    <th class="text-light">Voornaam</th>
-                    <th class="text-light">Tussenvoegsel</th>
-                    <th class="text-light">Achternaam</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody class="table-striped b">
-                    @foreach($adressen as $adres)
-                        <tr class="shadow-sm">
-                            <td class="text-dark">{{$adres->voornaam}}</td>
-                            <td class="text-dark">{{$adres->tussenvoegsel}}</td>
-                            <td class="text-dark">{{$adres->achternaam }}</td>
-                            <td><a href="/adressen/{{$adres->id}}">Meer informatie</a></td>
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
+    <div class="container" style="margin-top: 2em">
+        <h2>Adressen
+            <a role="button" class="btn btn-outline-info" href="/adressen/create">Maak er één</a>
+            <a role="button" class="btn btn-outline-info" href="/home"><</a>
+        </h2>
+            <div class="bg-info row text-center">
+                <div class="text-light col h4">Voornaam</div>
+                <div class="text-light col h4">Tussenvoegsel</div>
+                <div class="text-light col h4">Achternaam</div>
+            </div>
+            @foreach($adressen as $adres)
+                <a class="row Kleur1 text-dark border-bottom border-light text-center" href="/adressen/{{$adres->id}}">
+                    <div class="col-4">{{$adres->voornaam}}</div>
+                    <div class="col-4">{{$adres->tussenvoegsel}}</div>
+                    <div class="col-4">{{$adres->achternaam }}</div>
+                </a>
+            @endforeach
     </div>
 @endsection

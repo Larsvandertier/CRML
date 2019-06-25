@@ -1,8 +1,8 @@
 @extends('layout')
 @section('content')
-<div class="container">
+<div class="container" style="margin-top: 2em">
     <h2>Maak een adres aan<a role="button" class="btn btn-outline-info" href="/adressen"><</a></h2>
-    <form class="needs-validation" method="POST" action="/adressen">
+    <form id="form" class="needs-validation" method="POST" action="/adressen">
         @csrf
 
         <div class="form-group row">

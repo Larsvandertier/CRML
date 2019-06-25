@@ -2,7 +2,7 @@
 @section('content')
 
 
-    <div class="container">
+    <div class="container" style="margin-top: 2em">
         <h2>Informatie
             <a role="button" class="btn btn-outline-info" href="/adressen"><</a>
             <a role="button" class="btn btn-outline-info" href="/adressen/{{$adres->id}}/edit">Edit</a>
